@@ -43,6 +43,8 @@ public class Sample {
 		.filter(Sample::isEven)
 		.map(Sample::doubleIt);
 		
+		System.out.println(temp2);
+		
 		Stream<Integer> temp1 = values.stream()
 				.filter(e -> isGreaterThan3(e)) // office space pattern
 				.filter(Sample::isEven)
@@ -63,10 +65,7 @@ public class Sample {
 				.filter(e -> e % 2 == 0)
 				.map(e -> e * 2);
 		
-		System.out.println(
-				temp
-				.findFirst()
-				);
+		//System.out.println(temp.findFirst());
 
 	}
 
