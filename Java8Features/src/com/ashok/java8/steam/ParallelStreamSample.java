@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.ashok.java8.steam.parallel;
+package com.ashok.java8.steam;
 
 import java.util.Arrays;
 import java.util.List;
@@ -10,7 +10,7 @@ import java.util.List;
  * @author Supreet
  *
  */
-public class Sample {
+public class ParallelStreamSample {
 	
 	public static int doubleIt(int number) {
 		try {
@@ -33,7 +33,7 @@ public class Sample {
 				.sum());*/
 		
 		System.out.println(numbers.parallelStream()
-				.mapToInt(Sample::doubleIt)
+				.mapToInt(ParallelStreamSample::doubleIt)
 				.sum());
 	}
 
