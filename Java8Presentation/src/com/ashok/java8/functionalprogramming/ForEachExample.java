@@ -1,4 +1,4 @@
-package com.ashok.java8;
+package com.ashok.java8.functionalprogramming;
 
 import java.util.ArrayList;
 import java.util.Arrays;
