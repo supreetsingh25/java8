@@ -26,15 +26,15 @@ public class ConsumerExample {
 		for(int i : list) {
 			sum += i;
 		}
-		System.out.println(sum);
+		//System.out.println(sum);
 		
-		System.out.println(list.stream().reduce(0, Integer::sum));
+		/*System.out.println(list.stream().reduce(0, Integer::sum));
 		
 		System.out.println(list.stream().mapToInt(Integer::intValue).sum());
 		
-		System.out.println(list.stream().collect(Collectors.summingInt(Integer::intValue)).intValue());
+		System.out.println(list.stream().collect(Collectors.summingInt(Integer::intValue)).intValue());*/
 		
-		/*Consumer<Integer> c=new  ConsumerImpl();
+		Consumer<Integer> c=new  ConsumerImpl();
 		list.forEach(c);
 		
 		System.out.println("------------------------");
@@ -54,10 +54,10 @@ public class ConsumerExample {
 		list.forEach(c2);
 		
 		System.out.println("------------------------");
-		*/
+		
 		
 		// Internal Iterator
-		//list.forEach(i->System.out.println(i));
+		list.forEach(i->System.out.println(i));
 		
 	}
 

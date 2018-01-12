@@ -32,9 +32,9 @@ public class ParallelStreamSample {
 				.mapToInt(OneMoreSample::doubleIt)
 				.sum());*/
 		
-		System.out.println(numbers.parallelStream()
+		/*System.out.println(numbers.parallelStream()
 				.mapToInt(ParallelStreamSample::doubleIt)
-				.sum());
+				.sum());*/
 	}
 
 }

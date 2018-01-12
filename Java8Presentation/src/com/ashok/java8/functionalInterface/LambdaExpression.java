@@ -2,7 +2,7 @@ package com.ashok.java8.functionalInterface;
 
 interface A{
 
-	void show(int i);
+	 String show(int i);
 }
 
 /*class Xyz implements A{
@@ -21,19 +21,22 @@ public class LambdaExpression {
 		
 		A obj;
 		//obj=new Xyz();
-		/*obj=new A() {
-			public void show(int i) {
+		obj=new A() {
+			public String show(int i) {
 				System.out.println("Hello" + i);
+				return "";
 			}
-		};*/
+		};
 		
-		/*obj=(int i)->{
+		obj=(int i)->{
 			System.out.println("hello"+ i);
-		};*/
+			return "";
+		};
 		
-		obj=(i)->System.out.println("hello" + i);
+		obj=(i)->{return "dfsd";};
 		
-		obj.show(8);
+		//System.out.println(obj);
+		
 		
 		
 		
