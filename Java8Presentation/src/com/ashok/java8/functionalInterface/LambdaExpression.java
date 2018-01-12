@@ -1,4 +1,4 @@
-package com.ashok.java8.functionalprogramming;
+package com.ashok.java8.functionalInterface;
 
 interface A{
 

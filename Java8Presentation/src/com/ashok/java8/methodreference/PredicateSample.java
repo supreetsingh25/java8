@@ -13,7 +13,7 @@ import java.util.stream.Stream;
  * @author Supreet
  *
  */
-public class Sample {
+public class PredicateSample {
 	
 	public static boolean isGreaterThan3(int number) {
 		System.out.println("isGreaterThan3 "+number);
@@ -39,16 +39,16 @@ public class Sample {
 		
 		
 		Stream<Integer> temp2 = values.stream()
-		.filter(Sample::isGreaterThan3)
-		.filter(Sample::isEven)
-		.map(Sample::doubleIt);
+		.filter(PredicateSample::isGreaterThan3)
+		.filter(PredicateSample::isEven)
+		.map(PredicateSample::doubleIt);
 		
 		System.out.println(temp2);
 		
 		Stream<Integer> temp1 = values.stream()
 				.filter(e -> isGreaterThan3(e)) // office space pattern
-				.filter(Sample::isEven)
-				.map(Sample::doubleIt);
+				.filter(PredicateSample::isEven)
+				.map(PredicateSample::doubleIt);
 		
 		Predicate<Integer> isGreaterThan3 = number -> number > 3;
 		

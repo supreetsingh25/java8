@@ -1,4 +1,4 @@
-package com.ashok.methodreference;
+package com.ashok.java8.methodreference;
 
 import java.util.ArrayList;
 import java.util.Arrays;
